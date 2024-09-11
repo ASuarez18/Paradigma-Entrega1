@@ -14,13 +14,7 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player2")
-        {
-            animator.SetInteger("Transicion", 1);
-        }
-        if (other.gameObject.tag == "Player1")
-        {
-            animator.SetInteger("Transicion", 2);
-        }
+        Transicion += 1;
+        animator.SetInteger("Transicion", Transicion);
     }
 }
