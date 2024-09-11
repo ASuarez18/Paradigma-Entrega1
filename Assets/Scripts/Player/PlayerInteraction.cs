@@ -20,7 +20,7 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Function that verifies and searches for a ray collision with a collider of a door and/or candles
     /// </summary>
     void CheckRayInteraction()
     {
