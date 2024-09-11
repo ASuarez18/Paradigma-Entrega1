@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class PlayerInteraction : MonoBehaviour
 {
     
     public Camera mainCamera; 
     public float rayDistance = 2f;
-    public TextMeshProUGUI interactText;
+    public TextMeshProUGUI interactText, elementText;
 
     private void Start()
     {
@@ -32,7 +33,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, rayDistance))
         {
-            if (hit.collider.tag == "Door" || hit.collider.tag == "Candle") {
+            if (hit.collider.tag == "Door" || hit.collider.tag == "Candle" || hit.collider.tag == "Element") {
                 interactText.gameObject.SetActive(true);
                 // Door Collition
                 if (hit.collider.tag == "Door")
@@ -49,15 +50,36 @@ public class PlayerInteraction : MonoBehaviour
                     if (Input.GetKey(KeyCode.E))
                     {
                         // Ignite Candles
-                        throw new NotImplementedException();
+                        hit.collider.gameObject.GetComponent<CandleBehavior>().encenderVela();
+                        hit.collider.tag = "Untagged";
                     }
                 }
-                Debug.Log("El raycast ha golpeado: " + hit.collider.tag);
+
+                // Element Collition
+                if (hit.collider.tag == "Element")
+                {
+                    if (Input.GetKey(KeyCode.E))
+                    {
+                        // Obtain element
+                        hit.collider.gameObject.SetActive(false);
+                        hit.collider.tag = "Untagged";
+                        StartCoroutine(ElementMessage());
+                    }
+                }
+                // Debug.Log("El raycast ha golpeado: " + hit.collider.tag);
             }
             else
                 interactText.gameObject.SetActive(false);
         }
         else
             interactText.gameObject.SetActive(false);
+    }
+
+    IEnumerator ElementMessage()
+    {
+        yield return new WaitForSeconds(0.5f);
+        elementText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        elementText.gameObject.SetActive(false);
     }
 }
