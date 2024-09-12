@@ -10,9 +10,12 @@ public class Movi : MonoBehaviour
 
     AnimationController animController;
 
+    AudioSource audioSource;
+
     void Start()
     {
         animController = GetComponent<AnimationController>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -27,7 +30,9 @@ public class Movi : MonoBehaviour
         // Detectar cuando se presiona la tecla E
         if (Input.GetKeyDown(KeyCode.T) && !isMoving)
         {
+            audioSource.PlayOneShot(audioSource.clip);
             animController.cambiarAnimacion(3);
+
             
         }
     }
