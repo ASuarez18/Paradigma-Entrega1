@@ -10,6 +10,8 @@ public class PlayerInteraction : MonoBehaviour
     public float rayDistance = 2f;
     public TextMeshProUGUI interactText, elementText, quantityText;
     int quantiTyElements = 0;
+    private AudioSource audioSourceElement;
+    public AudioClip audioClipElement;
 
     private void Start()
     {
@@ -62,8 +64,10 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     if (Input.GetKey(KeyCode.E))
                     {
+                        audioSourceElement = hit.collider.gameObject.GetComponent<AudioSource>();
+                        audioSourceElement.PlayOneShot(audioClipElement);
                         // Obtain element
-                        hit.collider.gameObject.SetActive(false);
+                        hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = false;
                         hit.collider.tag = "Untagged";
                         StartCoroutine(ElementMessage());
                         quantityText.text = (++quantiTyElements).ToString();
