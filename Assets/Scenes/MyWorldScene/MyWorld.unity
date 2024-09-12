@@ -3699,6 +3699,37 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 2eab35037e59d984796fbd187af88c57, type: 3}
   m_PrefabInstance: {fileID: 803224693}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &818944531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818944532}
+  m_Layer: 0
+  m_Name: AMBIENT SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &818944532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818944531}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.034197, y: -0.080305666, z: -0.1494101}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &822896950 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 66460492755489740, guid: 369dd644de8818c438428d44057f8d39, type: 3}
@@ -8933,3 +8964,4 @@ SceneRoots:
   - {fileID: 1174762495}
   - {fileID: 1988019791}
   - {fileID: 923350215}
+  - {fileID: 818944532}
