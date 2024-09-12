@@ -66,9 +66,9 @@ namespace Player_Controller
             if(other.CompareTag("Stone")){
                 audioController.groundType = 0;
             }
-            if(other.CompareTag("Water")){
-                audioController.groundType = 1;
-            }
+            //if(other.CompareTag("Water")){
+            //    audioController.groundType = 1;
+            //}
             if(other.CompareTag("Monster"))
             {
                  SceneManager.LoadScene(SceneManager.GetActiveScene().name);

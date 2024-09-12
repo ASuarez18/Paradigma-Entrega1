@@ -308,7 +308,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5310,6 +5310,102 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &1285320338
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285320330}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!43 &1296137151
 Mesh:
   m_ObjectHideFlags: 0
@@ -6762,10 +6858,18 @@ PrefabInstance:
       propertyPath: audioVela
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2458770744038619615, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2676431518276264071, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 417732531}
+    - target: {fileID: 2750024450934886939, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2867932712571611081, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_TagString
       value: Candle
@@ -6794,6 +6898,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Candle
       objectReference: {fileID: 0}
+    - target: {fileID: 3437600716864395581, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3651171039232817230, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -6814,9 +6922,17 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1617449937}
+    - target: {fileID: 4597073202494612245, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4839867305534192245, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_TagString
       value: Candle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016705076049787157, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5043992183121406301, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: audioVela
@@ -6826,6 +6942,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1296137151}
+    - target: {fileID: 5329377243468739291, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331997339218795037, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5341257141788225008, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6930,6 +7054,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 487873499}
+    - target: {fileID: 6303810479797636757, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6715432999293297457, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6937,6 +7065,10 @@ PrefabInstance:
     - target: {fileID: 7103347714393332195, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: m_Name
       value: MiniWorld(Catacomb)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128681871153375293, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7175657800158390413, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       propertyPath: audioVela
@@ -6991,6 +7123,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 564856471241399679, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1285320334}
+    - targetCorrespondingSourceObject: {fileID: 564856471241399679, guid: 369dd644de8818c438428d44057f8d39, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1285320338}
     - targetCorrespondingSourceObject: {fileID: 7295966916091034533, guid: 369dd644de8818c438428d44057f8d39, type: 3}
       insertIndex: -1
       addedObject: {fileID: 558452796}
@@ -9062,7 +9197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9080365938328510301, guid: e2e03f71b00e037429ae741870c535ac, type: 3}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9263,6 +9398,7 @@ MonoBehaviour:
   interactText: {fileID: 1839069735}
   elementText: {fileID: 1622301339}
   quantityText: {fileID: 1179469208}
+  audioClipElement: {fileID: 8300000, guid: cac8065a8a4b4fe4bb68ca2028da7bc4, type: 3}
 --- !u!1 &1938046228
 GameObject:
   m_ObjectHideFlags: 0

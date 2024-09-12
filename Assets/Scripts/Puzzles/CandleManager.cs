@@ -18,10 +18,10 @@ public class CandleManager : MonoBehaviour
     {
         if(candles.Count >= 5)
         {
-            Debug.Log("Abrir reja");
+            //Debug.Log("Abrir reja");
             doorAnimator.SetTrigger("OpenDoor");
             candles.Clear();
         }
-        Debug.Log("Cantidad de velas:" + candles.Count);
+        //Debug.Log("Cantidad de velas:" + candles.Count);
     }
 }
