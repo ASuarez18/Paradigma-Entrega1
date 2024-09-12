@@ -6,7 +6,6 @@ public class Movi : MonoBehaviour
 {
     public Transform targetPosition;
     public float moveSpeed = 2f;
-    public float rotationSpeed = 180f; // en grados por segundo
     private bool isMoving = false; // Para controlar si el movimiento ya ha iniciado
 
     AnimationController animController;
@@ -19,14 +18,14 @@ public class Movi : MonoBehaviour
     void Update()
     {
         // Detectar cuando se presiona la tecla Q
-        if (Input.GetKeyDown(KeyCode.Q) && !isMoving)
+        if (Input.GetKeyDown(KeyCode.Space) && !isMoving)
         {
             // Iniciar el movimiento y la rotación
             StartCoroutine(MoverYRotar());
         }
 
         // Detectar cuando se presiona la tecla E
-        if (Input.GetKeyDown(KeyCode.E) && !isMoving)
+        if (Input.GetKeyDown(KeyCode.T) && !isMoving)
         {
             animController.cambiarAnimacion(3);
             
