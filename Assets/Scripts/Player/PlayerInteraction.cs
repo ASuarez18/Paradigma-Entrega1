@@ -8,11 +8,13 @@ public class PlayerInteraction : MonoBehaviour
     
     public Camera mainCamera; 
     public float rayDistance = 2f;
-    public TextMeshProUGUI interactText, elementText;
+    public TextMeshProUGUI interactText, elementText, quantityText;
+    int quantiTyElements = 0;
 
     private void Start()
     {
         interactText.gameObject.SetActive(false); 
+        quantityText.text = quantiTyElements.ToString();
     }
 
     private void FixedUpdate()
@@ -64,6 +66,7 @@ public class PlayerInteraction : MonoBehaviour
                         hit.collider.gameObject.SetActive(false);
                         hit.collider.tag = "Untagged";
                         StartCoroutine(ElementMessage());
+                        quantityText.text = (++quantiTyElements).ToString();
                     }
                 }
                 // Debug.Log("El raycast ha golpeado: " + hit.collider.tag);
